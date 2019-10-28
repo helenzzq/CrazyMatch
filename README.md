@@ -1,0 +1,2 @@
+# CrazyMatch
+A cancellation game
