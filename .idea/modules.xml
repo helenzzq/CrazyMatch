@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/CrazyMatches.iml" filepath="$PROJECT_DIR$/CrazyMatches.iml" />
       <module fileurl="file://$PROJECT_DIR$/Crazymatch.iml" filepath="$PROJECT_DIR$/Crazymatch.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>

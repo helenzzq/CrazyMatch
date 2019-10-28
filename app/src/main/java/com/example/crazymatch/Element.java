@@ -5,7 +5,7 @@ import java.util.List;
 /**
  * A class representaion of all the elements in the CrazyMatch Game
  */
-public abstract class Elements {
+public abstract class Element {
 
 /**
  * The appearance of the element
@@ -25,7 +25,7 @@ protected int y;
 protected String status;
 
 
-Elements(String appearance, int x, int y, String status){
+Element(String appearance, int x, int y, String status){
     this.appearance = appearance;
     this.x = x;
     this.y = y;
