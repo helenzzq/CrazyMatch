@@ -1,5 +1,7 @@
 package com.example.crazymatch;
 
+import android.widget.ImageView;
+
 import java.util.List;
 
 /**
@@ -10,7 +12,7 @@ public abstract class Element {
 /**
  * The appearance of the element
  */
-protected String appearance;
+protected ImageView appearance;
     /**
      * The x-coordinates of the elements
      */
@@ -25,7 +27,7 @@ protected int y;
 protected String status;
 
 
-Element(String appearance, int x, int y, String status){
+Element(ImageView appearance, int x, int y, String status){
     this.appearance = appearance;
     this.x = x;
     this.y = y;
