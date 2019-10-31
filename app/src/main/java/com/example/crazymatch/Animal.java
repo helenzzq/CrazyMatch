@@ -15,7 +15,7 @@ public class Animal {
      * The visibility of the animal
      */
 
-    private String status;
+
     private ImageView view;
     private boolean visibility;
     private String Species;

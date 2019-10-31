@@ -4,6 +4,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+import android.provider.ContactsContract;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -58,7 +59,10 @@ public class MatchActivity extends AppCompatActivity {
         IMGS[9] = findViewById(R.id.iv_32);
         IMGS[10] = findViewById(R.id.iv_33);
         IMGS[11] = findViewById(R.id.iv_34);
+        for (int i =0; i<IMGS.length; i++){
+            IMGS[i].setTag(i);
 
+        }
     }
 
     public void setImageOnClickListener() {
@@ -67,8 +71,10 @@ public class MatchActivity extends AppCompatActivity {
             card.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    doStuff(card, image_index);
-                    image_index++;
+                    int k = (int)v.getTag();
+                    doStuff(card, k);
+
+
                 }
             });
         }
@@ -96,7 +102,7 @@ public class MatchActivity extends AppCompatActivity {
             iv.setEnabled(false);
 
         } else if (cardNumber == 2) {
-            secondCard = cardArray[card];// this has to be int
+            secondCard = cardArray[card];
             if (secondCard > 200) {
                 secondCard = secondCard - 100;
 
@@ -124,10 +130,15 @@ public class MatchActivity extends AppCompatActivity {
 
     public void calculate() {
         if (firstCard == secondCard) {
-            for (int i = 0; i < IMGS.length; i++)
-                if (clickedFirst == i || clickedSecond == i) {
+            for (int i = 0; i < IMGS.length; i++){
+                if (clickedFirst == i) {
                     IMGS[i].setVisibility(View.INVISIBLE);
                 }
+                if (clickedSecond == i) {
+                    IMGS[i].setVisibility(View.INVISIBLE);
+                }
+            }
+
             if (turn == 1) {
                 playerPoints++;
                 score.setText("Score:" + playerPoints);
