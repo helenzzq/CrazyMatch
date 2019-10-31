@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Crazymatch</string>
+    <string name="hidden">hidden</string>
+    <string name="score">Score:</string>>
 </resources>
