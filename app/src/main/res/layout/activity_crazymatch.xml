@@ -5,7 +5,7 @@
     android:id="@+id/crazymatchlayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/nightforest"
+    android:background="@drawable/nightmountainbg"
     tools:context=".CrazyMatchActivity">
 
     <ImageView
@@ -21,18 +21,17 @@
 
     <GridView
         android:id="@+id/gridview"
-        android:numColumns="5"
-        android:stretchMode="columnWidth"
-        android:layout_width="366dp"
+        android:layout_width="match_parent"
         android:layout_height="526dp"
-        android:layout_marginStart="23dp"
-        android:layout_marginTop="61dp"
-        android:layout_marginEnd="22dp"
-        android:layout_marginBottom="64dp"
+        android:numColumns="4"
+        android:stretchMode="columnWidth"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/help" />
+        app:layout_constraintTop_toBottomOf="@+id/help"
+        app:layout_constraintVertical_bias="0.0" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 

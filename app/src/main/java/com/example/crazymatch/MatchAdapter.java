@@ -40,12 +40,11 @@ public class MatchAdapter extends BaseAdapter {
             imageView.setLayoutParams((new GridView.LayoutParams(350,350)));
             imageView.setScaleType(ImageView.ScaleType.FIT_XY);
         }
-        else {
+        else
             imageView = (ImageView)convertView;
             imageView.setImageResource(R.drawable.planet);
+            return imageView;
 
-        }
 
-        return imageView;
     }
 }
